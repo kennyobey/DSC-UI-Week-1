@@ -50,6 +50,9 @@ flutter:
       - images/donut.png
       - images/pizza.png
       - images/man.png
+      - images/notification.png
+      - images/settings.png
+      - images/username.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
