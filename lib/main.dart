@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:unicode/unicode.dart';
-//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:weather_app/second_page.dart';
 
-//import 'package:http/http.dart' as http;
-//import 'dart:convert';
 
-// void main() => runApp(MyApp(
-//     //     initialRoute: '/', routes: {
-//     //   '/': (context) => MyApp(),
-//     //   '/sign': (context) => Auththen(),
-//     // }
-//     ));
 
 void main() => runApp(MyApp());
 
@@ -21,21 +12,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'DSC Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: Home(),
     );
   }
 }
 
-class HomeScreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _HomeState();
-  }
-// TODO: implement createState
-}
-
-class _HomeState extends State<HomeScreen> {
-  @override
+class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return SafeArea(
@@ -323,14 +305,13 @@ class _HomeState extends State<HomeScreen> {
   }
   void _navigateToNextScreen(BuildContext context) {
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => Auththen()));
+        MaterialPageRoute(builder: (context) => Second_page()));
   }
 
 }
 
 
-class Auththen extends StatelessWidget {
-
+class Second_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -383,36 +364,36 @@ class Auththen extends StatelessWidget {
                 ),
                 SizedBox(height: 30,),
                 Center(
-                 // padding: EdgeInsets.only(left: 20, top: 30, bottom: 40),
+                  // padding: EdgeInsets.only(left: 20, top: 30, bottom: 40),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "images/man.png",
-                            width: 100,
-                            height: 100,
-                          ),
-                          SizedBox(height: 10,),
-                          Text(
-                            'Kehinde Obey',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/man.png",
+                              width: 100,
+                              height: 100,
                             ),
-                          ),
-                          SizedBox(height: 5,),
-                          Text(
-                            'kennyobey@gmail',
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 10),
-                  ]
+                            SizedBox(height: 10,),
+                            Text(
+                              'Kehinde Obey',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(height: 5,),
+                            Text(
+                              'kennyobey@gmail',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                      ]
                   ),
                 ),
                 SizedBox(height: 20,),
@@ -457,9 +438,9 @@ class Auththen extends StatelessWidget {
                                       Text(
                                         "40",
                                         style: TextStyle(
-                                          fontSize: 30,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w800
+                                            fontSize: 30,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w800
                                         ),
                                       ),
                                       SizedBox(height: 5,),
@@ -519,9 +500,9 @@ class Auththen extends StatelessWidget {
                                       Text(
                                         "6",
                                         style: TextStyle(
-                                          fontSize: 30,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w800
+                                            fontSize: 30,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w800
                                         ),
                                       ),
                                       SizedBox(height: 5,),
