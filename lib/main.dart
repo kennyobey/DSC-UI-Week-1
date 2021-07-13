@@ -329,12 +329,7 @@ class _HomeState extends State<HomeScreen> {
 }
 
 
-class Auththen extends StatefulWidget {
-  @override
-  _HomepageViewState createState() => _HomepageViewState();
-}
-
-class _HomepageViewState extends State <Auththen> {
+class Auththen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
